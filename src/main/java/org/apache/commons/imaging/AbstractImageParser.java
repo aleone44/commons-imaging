@@ -24,10 +24,7 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.nio.ByteOrder;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -276,7 +273,7 @@ public abstract class AbstractImageParser<T extends ImagingParameters<T>> extend
      */
     public final List<BufferedImage> getAllBufferedImages(final File file) throws ImagingException, IOException {
         if (!canAcceptExtension(file)) {
-            return null;
+            return Collections.emptyList();
         }
 
         return getAllBufferedImages(ByteSource.file(file));
