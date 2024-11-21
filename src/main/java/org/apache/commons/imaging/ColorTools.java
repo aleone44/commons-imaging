@@ -42,6 +42,7 @@ import java.io.IOException;
  */
 public class ColorTools {
 
+
     public BufferedImage convertBetweenColorSpaces(BufferedImage bi, final ColorSpace from, final ColorSpace to) {
         final RenderingHints hints = new RenderingHints(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
         hints.put(RenderingHints.KEY_COLOR_RENDERING, RenderingHints.VALUE_COLOR_RENDER_QUALITY);
