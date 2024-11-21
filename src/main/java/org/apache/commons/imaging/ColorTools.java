@@ -48,7 +48,6 @@ public class ColorTools {
         hints.put(RenderingHints.KEY_DITHERING, RenderingHints.VALUE_DITHER_ENABLE);
 
         final ColorConvertOp op = new ColorConvertOp(from, to, hints);
-
         bi = relabelColorSpace(bi, from);
 
         final BufferedImage result = op.filter(bi, null);
@@ -71,9 +70,7 @@ public class ColorTools {
         bi = op.filter(bi, null);
 
         bi = relabelColorSpace(bi, from);
-
         bi = op.filter(bi, null);
-
         return relabelColorSpace(bi, to);
 
     }
