@@ -24,7 +24,7 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.nio.ByteOrder;
-import java.util.*;
+import java.util.Collections;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
