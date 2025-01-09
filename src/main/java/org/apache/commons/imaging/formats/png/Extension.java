@@ -14,16 +14,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.apache.commons.imaging.formats.png;
 
 /**
- * The WebP image format.
+ * PNG extension types.
  *
- * <p>
- * Currently, it only supports parsing the WebP container format and extracting metadata from image file, but does not support encoding or decoding the content
- * of the image.
- * </p>
- *
- * @see <a href="https://developers.google.com/speed/webp/docs/riff_container">WebP Container Specification</a>
- * @since 1.0-alpha4
+ * @since 1.0-alpha6
  */
-package org.apache.commons.imaging.formats.webp;
+enum Extension {
+    /**
+     * @see <a href="http://ftp-osl.osuosl.org/pub/libpng/documents/pngext-1.5.0.html">Extensions to the PNG 1.2 Specification, Version 1.5.0</a>
+     */
+    PNGEXT,
+
+    /**
+     * @see <a href="https://wiki.mozilla.org/APNG_Specification">APNG Specification</a>
+     */
+    APNG,
+}
