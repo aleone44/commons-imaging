@@ -53,4 +53,4 @@ jobs:
         distribution: 'temurin'
         java-version: ${{ matrix.java }}
     - name: Build with Maven
-      run: mvn --errors --show-version --batch-mode --no-transfer-progress clean install -Drat.skip=true
+      run: mvn --errors --show-version --batch-mode --no-transfer-progress
